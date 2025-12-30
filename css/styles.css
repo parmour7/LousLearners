@@ -1,0 +1,141 @@
+/* ===== GLOBAL STYLES ===== */
+:root {
+  --primary: #4f7cac;
+  --secondary: #f3f6f9;
+  --text: #243447;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* ===== LAYOUT ===== */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+.narrow {
+  max-width: 700px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* ===== HEADER ===== */
+.site-header {
+  background: var(--white);
+  border-bottom: 1px solid #eaeaea;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.logo {
+  font-weight: 700;
+}
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+}
+
+.btn-large {
+  font-size: 1.1rem;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: var(--secondary);
+  padding: 4rem 0;
+}
+
+.hero-subtitle {
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  padding: 3rem 0;
+}
+
+.section-soft {
+  background: var(--secondary);
+}
+
+/* ===== GRID ===== */
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.benefits-grid,
+.pricing-grid,
+.testimonials-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.benefits-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+/* ===== CARDS ===== */
+.benefit-card,
+.price-card,
+.testimonial-card {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.highlight {
+  border: 2px solid var(--primary);
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  background: #f9fafb;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+
+  nav a {
+    margin-left: 0.5rem;
+  }
+}
